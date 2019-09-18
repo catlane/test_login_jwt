@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.jq22.com/demo/login-html201909032346/login.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>**管理系统</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="all,follow">
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./Bootstrap Material Admin_files/style.default.css" id="theme-stylesheet"><link id="new-stylesheet" rel="stylesheet">
+<style type="text/css">
+button.btn[data-v-cef78672] {
+	display: inline-block;
+	font-weight: 300;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	letter-spacing: 1px;
+	transition: all .15s ease
+}
+
+button.btn.btn-sm[data-v-cef78672] {
+	padding: .4rem .8rem;
+	font-size: .8rem;
+	border-radius: .2rem
+}
+
+button.btn.btn-primary[data-v-cef78672] {
+	color: #fff;
+	background-color: #45C8F1;
+	border-color: #45C8F1
+}
+
+button.btn.btn-outline-primary[data-v-cef78672] {
+	color: #45C8F1;
+	background-color: transparent;
+	border-color: #45C8F1
+}
+
+button.btn.btn-danger[data-v-cef78672] {
+	color: #fff;
+	background-color: #FF4949;
+	border-color: #FF4949
+}
+
+.text-muted[data-v-cef78672] {
+	color: #8492A6
+}
+
+.text-center[data-v-cef78672] {
+	text-align: center
+}
+
+.drop-down-enter[data-v-cef78672], .drop-down-leave-to[data-v-cef78672] {
+	transform: translateX(0) translateY(-20px);
+	transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+	opacity: 0
+}
+
+.drop-down-enter-active[data-v-cef78672], .drop-down-leave-active[data-v-cef78672] {
+	transition: all .15s
+}
+
+.move-left-enter[data-v-cef78672], .move-left-leave-to[data-v-cef78672] {
+	transform: translateY(0) translateX(-80px);
+	transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+	opacity: 0
+}
+
+.move-left-enter-active[data-v-cef78672], .move-left-leave-active[data-v-cef78672] {
+	transition: all .15s
+}
+
+.shake[data-v-cef78672] {
+	animation: shake-data-v-cef78672 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0)
+}
+
+@keyframes shake-data-v-cef78672 {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0)
+	}
+	20%, 80% {
+		transform: translate3d(2px, 0, 0)
+	}
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0)
+	}
+	40%, 60% {
+		transform: translate3d(4px, 0, 0)
+	}
+}
+
+.pulse[data-v-cef78672] {
+	animation: pulse-data-v-cef78672 2s ease infinite
+}
+
+@keyframes pulse-data-v-cef78672 {
+	0% {
+		opacity: .7
+	}
+	50% {
+		opacity: .4
+	}
+	100% {
+		opacity: .7
+	}
+}
+
+.flash-once[data-v-cef78672] {
+	animation: flash-once 3.5s ease 1
+}
+
+@keyframes fade-up-data-v-cef78672 {
+	0% {
+		transform: translate3d(0, 10px, 0);
+		opacity: 0
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1
+	}
+}
+
+.fade-in[data-v-cef78672] {
+	animation: fade-in-data-v-cef78672 .3s ease-in-out
+}
+
+@keyframes fade-in-data-v-cef78672 {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+.spin[data-v-cef78672] {
+	animation-name: spin-data-v-cef78672;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear
+}
+
+@keyframes spin-data-v-cef78672 {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+.bounceIn[data-v-cef78672] {
+	animation-name: bounceIn-data-v-cef78672;
+	transform-origin: center bottom;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: 1
+}
+
+@keyframes bounceIn-data-v-cef78672 {
+	0%, 20%, 40%, 60%, 80%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+	}
+	0% {
+		opacity: 1;
+		-webkit-transform: scale3d(0.8, 0.8, 0.8);
+		transform: scale3d(0.8, 0.8, 0.8)
+	}
+	20% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1)
+	}
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03)
+	}
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+@keyframes dots-data-v-cef78672 {
+	0%, 20% {
+		color: rgba(0, 0, 0, 0);
+		text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+	}
+	40% {
+		color: #8492A6;
+		text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+	}
+	60% {
+		text-shadow: 0.25em 0 0 #8492A6, 0.5em 0 0 rgba(0, 0, 0, 0)
+	}
+	80%, 100% {
+		text-shadow: .25em 0 0 #8492A6, .5em 0 0 #8492A6
+	}
+}
+
+@keyframes recording-data-v-cef78672 {
+	0% {
+		box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
+	}
+	65% {
+		box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3)
+	}
+	90% {
+		box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0)
+	}
+}
+
+html[data-v-cef78672] {
+	max-height: 500px
+}
+
+body[data-v-cef78672] {
+	margin: 0;
+	font-size: 100%;
+	color: #3C4858;
+	width: 350px;
+	max-height: 500px
+}
+
+a[data-v-cef78672] {
+	text-decoration: none;
+	color: #45C8F1
+}
+
+h1[data-v-cef78672], h2[data-v-cef78672], h3[data-v-cef78672], h4[data-v-cef78672] {
+	margin-top: 0
+}
+
+.container_selected_area[data-v-cef78672] {
+	padding: 0px;
+	position: fixed;
+	z-index: 1000000;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: none;
+	visibility: hidden
+}
+
+.container_selected_area.active[data-v-cef78672] {
+	visibility: visible;
+	display: block
+}
+
+.container_selected_area .label[data-v-cef78672] {
+	font-family: "Didact Gothic Regular", sans-serif;
+	font-size: 22px;
+	text-align: center;
+	padding-top: 15px
+}
+
+.container_selected_area .area[data-v-cef78672] {
+	border: 1px solid #1e83ff;
+	background: rgba(30, 131, 255, 0.1);
+	display: none;
+	position: fixed;
+	z-index: 1000000;
+	box-sizing: border-box
+}
+
+.container_selected_area .area.active[data-v-cef78672] {
+	display: block;
+	top: 0px;
+	left: 0px
+}
+
+.hide[data-v-cef78672] {
+	display: none
+}
+</style><meta id="kancloud-proxy" version="0.0.2"></head>
+<body style="">
+<div class="page login-page">
+<div class="container d-flex align-items-center">
+<div class="form-holder has-shadow">
+<div class="row">
+
+<div class="col-lg-6">
+<div class="info d-flex align-items-center">
+<div class="content">
+<div class="logo">
+<h1>欢迎登录</h1>
+</div>
+<p>**管理系统</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 bg-white">
+<div class="form d-flex align-items-center">
+<div class="content">
+<form method="post" action="javascript:;" class="form-validate" id="loginFrom" novalidate="novalidate">
+<div class="form-group">
+<input id="login-username" type="text" name="userName" required="" data-msg="请输入用户名" placeholder="用户名" value="admin" class="input-material">
+</div>
+
+
+<div class="form-group">
+<input id="login-password" type="password" name="passWord" required="" data-msg="请输入密码" placeholder="密码" class="input-material">
+</div>
+<div class="form-group">
+ <div id="v1"></div>
+</div>
+<button id="login" type="submit" class="btn btn-primary">登录</button>
+<div style="margin-top: -40px;">
+
+
+</div>
+</form>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./Bootstrap Material Admin_files/jquery.validate.min.js"></script>
+
+<script src="./Bootstrap Material Admin_files/front.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="https://cdn.dingxiang-inc.com/ctu-group/captcha-ui/index.js"></script>
+
+<script>
+    	$ ( function () {
+
+            var myCaptcha = _dx.Captcha(document.getElementById('v1'), {
+                appId: '5d4252a54b68bca1dc795913e4820154', //appId，在控制台中“应用管理”或“应用配置”模块获取
+                style:'oneclick',
+                width:340,
+                success: function (token) {
+                    sessionStorage.setItem ( 'captcha' , token );
+                }
+            });
+
+            var jwt = sessionStorage.getItem('jwt_key');
+
+            if ( jwt ) {
+                alert('已通过')
+                window.location.href = 'index.html';
+            }
+
+		    /*判断上次是否勾选记住密码和自动登录*/
+            var check1s = localStorage.getItem ( "check1" );
+            var check2s = localStorage.getItem ( "check2" );
+            var oldName = localStorage.getItem ( "userName" );
+            var oldPass = localStorage.getItem ( "passWord" );
+            if ( check1s == "true" ) {
+                $ ( "#login-username" ).val ( oldName );
+                $ ( "#login-password" ).val ( oldPass );
+                $ ( "#check1" ).prop ( 'checked' , true );
+            } else {
+                $ ( "#login-username" ).val ( '' );
+                $ ( "#login-password" ).val ( '' );
+                $ ( "#check1" ).prop ( 'checked' , false );
+            }
+            if ( check2s == "true" ) {
+                $ ( "#check2" ).prop ( 'checked' , true );
+                $ ( "#loginFrom" ).submit ();
+                //location="https://www.baidu.com?userName="+oldName+"&passWord="+oldPass;//添加退出当前账号功能
+            } else {
+                $ ( "#check2" ).prop ( 'checked' , false );
+            }
+		    /*拿到刚刚注册的账号*/
+		    /*if(localStorage.getItem("name")!=null){
+		     $("#login-username").val(localStorage.getItem("name"));
+		     }*/
+		    /*登录*/
+            $ ( "#login" ).click ( function () {
+                var userName = $ ( "#login-username" ).val ();
+                var passWord = $ ( "#login-password" ).val ();
+			    /*获取当前输入的账号密码*/
+                localStorage.setItem ( "userName" , userName )
+                localStorage.setItem ( "passWord" , passWord )
+			    /*获取记住密码  自动登录的 checkbox的值*/
+                var check1 = $ ( "#check1" ).prop ( 'checked' );
+                var check2 = $ ( '#check2' ).prop ( 'checked' );
+                localStorage.setItem ( "check1" , check1 );
+                localStorage.setItem ( "check2" , check2 );
+
+                if ( sessionStorage.getItem ( 'captcha' ) ) {
+                    $.ajax({
+                        data:{
+                            username:userName,
+                            password:md5(passWord)
+                        },
+                        dataType: "json",
+                        type: "post",
+                        url:'http://tp.com:81/login',
+                        success: function (res) {
+                            sessionStorage.removeItem ( 'captcha' );
+                            sessionStorage.setItem('jwt_key',res.data.jwt)
+                            alert ( '登录成功' );
+                            window.location.href = 'index.html';
+                        }
+                    });
+                }else {
+                    alert('极验证未通过')
+                }
+
+
+
+                return false;
+            } )
+
+		    /*$("#check2").click(function(){
+		     var flag=$('#check2').prop('checked');
+		     if(flag){
+		     var userName=$("#login-username").val();
+		     var passWord=$("#login-password").val();
+		     $.ajax({
+		     type:"post",
+		     url:"http://localhost:8080/powers/pow/regUsers",
+		     data:{"userName":userName,"passWord":passWord},
+		     async:true,
+		     success:function(res){
+		     alert(res);
+		     }
+		     });
+		     }
+		     })*/
+        } )
+    </script>
+
+<input type="file" id="" name="file" style="display: none;"><div data-v-cef78672="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ialiedlpfknneamnbemcgmaboleiccdd/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-cef78672="" class="area"></div></div></body></html>
